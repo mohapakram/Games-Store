@@ -1,3 +1,12 @@
+.flat-btn {
+  padding: 1em 1.5em;
+  border: none;
+  outline: none;
+  color: @dark;
+  background-color: white;
+  box-shadow: none;
+}
+
 #search {
   height: 40vh;
   position: relative;
@@ -44,12 +53,7 @@
 
   &-container {
     > button {
-      padding: 1em 1.5em;
-      border: none;
-      outline: none;
-      color: @dark;
-      background-color: white;
-      box-shadow: none;
+      .flat-btn;
 
       &:last-child {
         background-color: @dark;

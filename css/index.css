@@ -126,19 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.container {
-  width: 1400px;
-  margin: 0 auto;
-}
-.container-full-width {
-  width: auto;
-}
-.flex-container {
-  display: flex;
-}
-.margin-x-auto {
-  margin: 0 auto;
-}
 @font-face {
   font-family: "Gotham";
   src: url("/fonts/HomepageBaukasten-Bold.ttf") format("truetype");
@@ -172,12 +159,104 @@ table {
 .dark-bg {
   background-color: #383838;
 }
+.darker-bg {
+  background-color: #f7f7f7;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.container-full-width {
+  width: auto;
+}
+.border {
+  border: 1px solid #88888869;
+}
+.flex-container {
+  display: flex;
+}
+.margin-x-auto {
+  margin: 0 auto;
+}
+#products {
+  margin-top: 15px;
+}
+.products-show {
+  width: auto;
+  padding: 5px 25px;
+  margin: 0 auto;
+}
+.products-show h2 {
+  border-bottom: 1px solid #88888869;
+  font-weight: normal;
+  margin: 25px auto;
+  width: 90%;
+  padding-bottom: 15px;
+}
+.products-grid {
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 15px;
+}
+.products-grid > span {
+  position: absolute;
+  top: 40%;
+  font-size: 3em;
+  color: black;
+  cursor: pointer;
+}
+.products-grid > span:first-of-type {
+  left: -5%;
+}
+.products-grid > span:last-of-type {
+  right: -5%;
+}
+.products-grid article {
+  border: 1px solid #88888869;
+  background-color: white;
+}
+.products-grid article img {
+  width: 100%;
+  margin: 0 auto;
+}
+.products-grid article > h3,
+.products-grid article > span {
+  margin: 5px 15px;
+}
+.products-grid article div {
+  padding: 15px;
+  justify-content: space-between;
+}
+.products-grid article div * {
+  margin: 5px 0;
+}
+.products-grid article div button {
+  padding: 1em 1.5em;
+  border: none;
+  outline: none;
+  color: #383838;
+  background-color: white;
+  box-shadow: none;
+  padding: 5px 10px;
+  border: 1px solid #88888869;
+}
+.products-grid article div span {
+  color: #d35266;
+}
 body {
   background-color: #fafbfb;
   font-size: 14px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: normal;
   text-transform: capitalize;
+  color: #888888;
+  line-height: 1.4em;
+}
+p {
+  margin: 15px;
 }
 button {
   cursor: pointer;
@@ -195,6 +274,9 @@ h6 {
 }
 h1 {
   font-size: 4em;
+}
+h2 {
+  font-size: 1.8em;
 }
 a {
   text-decoration: none;
@@ -273,6 +355,14 @@ header #profile-image-container img {
   border-radius: 50%;
   height: 60px;
 }
+.flat-btn {
+  padding: 1em 1.5em;
+  border: none;
+  outline: none;
+  color: #383838;
+  background-color: white;
+  box-shadow: none;
+}
 #search {
   height: 40vh;
   position: relative;
@@ -336,4 +426,98 @@ header #profile-image-container img {
 }
 #search-container input:nth-child(3) {
   width: 200px;
+}
+.nextItem {
+  width: 50px;
+  height: 50px;
+  color: #d35266;
+  font-size: 4em;
+  padding: 16px 0 0 16px;
+  position: absolute;
+  top: 40%;
+  border-radius: 50%;
+  border: 1px solid #88888869;
+  cursor: pointer;
+}
+#hot-ads {
+  position: relative;
+  width: 50%;
+}
+#hot-ads h2 {
+  text-align: left;
+  margin-left: 0;
+  font-size: 1.8em;
+  font-weight: normal;
+}
+#hot-ads article img {
+  width: 100%;
+}
+#hot-ads article section h2 {
+  font-size: 2em;
+  color: #d35266;
+  margin: 0 15px;
+}
+#hot-ads article section div {
+  margin: 15px;
+}
+#hot-ads article section div strong {
+  font-weight: bold;
+}
+#hot-ads article section div > * {
+  display: block;
+}
+#hot-ads article button {
+  background-color: #d35266;
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  outline: none;
+  transition: all 0.5s ease-out;
+  text-transform: capitalize;
+}
+#hot-ads article button:hover {
+  background-color: white;
+  color: #d35266;
+}
+#hot-ads article button:first-of-type {
+  margin: 0 0 0 15px;
+  border-radius: 15px 0 0 15px;
+}
+#hot-ads article button:last-of-type {
+  margin: 0 0 0 -3px;
+  border-radius: 0 15px 15px 0;
+}
+#hot-ads article:after {
+  width: 50px;
+  height: 50px;
+  color: #d35266;
+  font-size: 4em;
+  padding: 16px 0 0 16px;
+  position: absolute;
+  top: 40%;
+  border-radius: 50%;
+  border: 1px solid #88888869;
+  cursor: pointer;
+  content: ">";
+  right: -17%;
+}
+#hot-ads article:before {
+  width: 50px;
+  height: 50px;
+  color: #d35266;
+  font-size: 4em;
+  padding: 16px 0 0 16px;
+  position: absolute;
+  top: 40%;
+  border-radius: 50%;
+  border: 1px solid #88888869;
+  cursor: pointer;
+  content: "<";
+  left: -17%;
+}
+#hot-ads article:hover:before,
+#hot-ads article:hover:after {
+  background-color: #d35266;
+  color: white;
 }
