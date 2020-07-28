@@ -126,6 +126,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+.container-full-width {
+  width: auto;
+}
+.flex-container {
+  display: flex;
+}
+.margin-x-auto {
+  margin: 0 auto;
+}
 @font-face {
   font-family: "Gotham";
   src: url("/fonts/HomepageBaukasten-Bold.ttf") format("truetype");
@@ -155,4 +168,85 @@ table {
   src: url("/fonts/Helvetica Neu Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+}
+.dark-bg {
+  background-color: #383838;
+}
+body {
+  background-color: #fafbfb;
+  font-size: 14px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+.primary-btn {
+  background-color: #d35266;
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  outline: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.flex-align-center {
+  align-items: center;
+}
+.messages-number:after {
+  content: "1";
+  position: absolute;
+  top: 0;
+  padding: 5px;
+  font-size: 0.8em;
+  color: white;
+  border-radius: 25%;
+  background-color: #d35266;
+}
+header {
+  width: 85vw;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+header nav {
+  text-transform: uppercase;
+}
+header nav img#logo {
+  height: 60px;
+}
+header nav > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1.5em;
+}
+header nav ul li {
+  display: inline;
+  margin: 0 2em;
+}
+header nav ul li:hover a,
+header nav ul li:hover i {
+  color: #d35266;
+}
+header a,
+header i {
+  color: #888888;
+  margin: 0 1em;
+}
+header #profile {
+  position: relative;
+}
+header #profile span {
+  padding: 1em;
+}
+header #profile-image-container {
+  color: white;
+}
+header #profile-image-container img {
+  border-radius: 50%;
+  height: 60px;
 }

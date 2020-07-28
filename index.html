@@ -5,23 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Gray Games</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo.png" alt="gray games shop logo">
-        <nav>
-         <ul>
-             <li>home</li>
-             <li>colections</li>
-             <li>purchase list</li>
-         </ul>
-        </nav>
-        <button>
-            post an ad
-        </button>
-    </header>
+    <div class="container-full-width dark-bg">
+        <header class="margin-x-auto flex-container flex-align-center">
+            <nav>
+                <img id="logo" src="./img/logo.png" alt="gray games shop logo">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            home
+                        </a>    
+                   
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-book-open"></i>
+                            colections
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            purchase list
+                        </a>
+                    </li>
+                </ul>
+                <button class="primary-btn uppercase">
+                    post an ad
+                </button>
+            </nav>
+            <div id="profile" class="flex-container flex-align-center">
+                <i class="fas fa-inbox messages-number"></i>
+               
+                <div id="profile-image-container" class="flex-container flex-align-center">
+                    <span class="capitalize">mohap akram</span>
+                    <img src="./img/profile.jfif" alt="profile image">
+                </div>  
+            </div>
+        </header>
+    </div>
+  
 </body>
 
 </html>

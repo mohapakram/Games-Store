@@ -1,0 +1,52 @@
+header {
+  width: 85vw; //TODO: will change
+  justify-content: space-between;
+  padding: 15px 0;
+  nav {
+    text-transform: uppercase;
+
+    img#logo {
+      height: 60px;
+    }
+
+    > * {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 1.5em;
+    }
+
+    ul {
+      li {
+        display: inline;
+        margin: 0 2em;
+
+        &:hover {
+          a,
+          i {
+            color: @pink;
+          }
+        }
+      }
+    }
+  }
+
+  a,
+  i {
+    color: @gray;
+    margin: 0 1em;
+  }
+
+  #profile {
+    position: relative;
+    span {
+      padding: 1em;
+    }
+    &-image-container {
+      color: white;
+      img {
+        border-radius: 50%;
+        height: 60px;
+      }
+    }
+  }
+}
