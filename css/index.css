@@ -177,6 +177,24 @@ body {
   font-size: 14px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: normal;
+  text-transform: capitalize;
+}
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gotham", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 15px;
+}
+h1 {
+  font-size: 4em;
 }
 a {
   text-decoration: none;
@@ -188,6 +206,11 @@ a {
   color: white;
   border: none;
   outline: none;
+  transition: all 0.5s ease-out;
+}
+.primary-btn:hover {
+  background-color: white;
+  color: #d35266;
 }
 .uppercase {
   text-transform: uppercase;
@@ -249,4 +272,68 @@ header #profile-image-container {
 header #profile-image-container img {
   border-radius: 50%;
   height: 60px;
+}
+#search {
+  height: 40vh;
+  position: relative;
+  background-color: #d35266;
+  color: white;
+  z-index: 1;
+}
+#search:after {
+  width: 50%;
+  height: 110%;
+  content: "";
+  background: url(../../../img/search-overlay.png) no-repeat top;
+  opacity: 0.1;
+  top: -15%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all 1s ease-out;
+}
+#search:hover:after {
+  opacity: 0.2;
+  transform: rotate(10deg);
+}
+#search > div {
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 100%;
+}
+#search-text img {
+  height: 100px;
+}
+#search-text p {
+  font-size: 1.8em;
+}
+#search-container > button {
+  padding: 1em 1.5em;
+  border: none;
+  outline: none;
+  color: #383838;
+  background-color: white;
+  box-shadow: none;
+}
+#search-container > button:last-child {
+  background-color: #383838;
+}
+#search-container > button:last-child a {
+  color: white;
+}
+#search-container input {
+  padding: 1em 1.5em;
+  border: none;
+  outline: none;
+  width: 400px;
+  color: #383838;
+  background-color: white;
+  box-shadow: none;
+}
+#search-container input:nth-child(3) {
+  width: 200px;
 }

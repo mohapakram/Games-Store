@@ -1,0 +1,76 @@
+#search {
+  height: 40vh;
+  position: relative;
+  background-color: @pink;
+  color: white;
+  z-index: 1;
+  &:after {
+    width: 50%;
+    height: 110%;
+    content: "";
+    background: url(../../../img/search-overlay.png) no-repeat top;
+    opacity: 0.1;
+    top: -15%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all 1s ease-out;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 0.2;
+      transform: rotate(10deg);
+    }
+  }
+  > div {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+  }
+  &-text {
+    img {
+      height: 100px;
+    }
+
+    p {
+      font-size: 1.8em;
+    }
+  }
+
+  &-container {
+    > button {
+      padding: 1em 1.5em;
+      border: none;
+      outline: none;
+      color: @dark;
+      background-color: white;
+      box-shadow: none;
+
+      &:last-child {
+        background-color: @dark;
+        a {
+          color: white;
+        }
+      }
+    }
+
+    input {
+      padding: 1em 1.5em;
+      border: none;
+      outline: none;
+      width: 400px;
+      color: @dark;
+      background-color: white;
+      box-shadow: none;
+
+      &:nth-child(3) {
+        width: 200px;
+      }
+    }
+  }
+}
