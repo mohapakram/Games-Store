@@ -180,6 +180,10 @@ table {
 }
 #products {
   margin-top: 15px;
+  border: 1px solid #88888869;
+}
+.grid-container {
+  display: grid;
 }
 .products-show {
   width: auto;
