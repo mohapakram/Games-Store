@@ -11,51 +11,53 @@
 
 <body>
     <div class="container-full-width dark-bg">
-        <header class="margin-x-auto flex-container flex-align-center">
-            <nav>
-                <img id="logo" src="./img/logo.png" alt="gray games shop logo">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-home"></i>
-                            home
-                        </a>    
-                   
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-book-open"></i>
-                            colections
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-shopping-cart"></i>
-                            purchase list
-                        </a>
-                    </li>
-                </ul>
-                <button class="primary-btn uppercase">
-                    post an ad
-                </button>
-            </nav>
-            <div id="profile" class="flex-container flex-align-center">
-                <i class="fas fa-inbox messages-number"></i>
-               
-                <div id="profile-image-container" class="flex-container flex-align-center">
-                    <span class="capitalize">mohap akram</span>
-                    <img src="./img/profile.jfif" alt="profile image">
-                </div>  
-            </div>
-        </header>
+        <div class="container">
+            <header class="flex-container flex-align-center">
+                <nav class="flex-container flex-align-center">
+                    <img id="logo" src="./img/logo.png" alt="gray games shop logo">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-home"></i>
+                                home
+                            </a>
+            
+                        </li>
+                        <li>
+                            <a href="#">\
+                                <i class="fas fa-book-open"></i>
+                                colections
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                                purchase list
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="primary-btn uppercase">
+                        post an ad
+                    </button>
+                </nav>
+                <div id="profile" class="flex-container flex-align-center">
+                    <i class="fas fa-inbox messages-number"></i>
+            
+                    <div id="profile-image-container" class="flex-container flex-align-center">
+                        <span class="capitalize">mohap akram</span>
+                        <img src="./img/profile.jfif" alt="profile image">
+                    </div>
+                </div>
+            </header>
+        </div>
     </div>
-    <div id="search" class="container-full-width">
-        <div  class="flex-container margin-x-auto container">
-            <div id="search-text">
+    <div id="search" class="search">
+        <div  class="flex-container">
+            <div class="search-text">
                 <img src="./img/logo-text-only.png" alt="logo-text-only">
                 <p>buy ps4 accounts with your favorite games online</p>
             </div>
-            <div id="search-container">
+            <div class="search-container">
                 <button class="capitalize">
                 ▼ all departments
                 </button>
@@ -71,10 +73,10 @@
     </div>
 
     <main>
-        <section id="hot-ads" class="container margin-x-auto">
+        <section id="hot-ads">
           <h2>hot ads</h2>
-          <article class="flex-container">
-            <img src="./img/product1.jfif" alt="">
+          <article class="grid-container">
+            <img src="./img/ghost.jpg" alt="">
             <section>
                  <h2>ghost of tsushima</h2>
                  <p>
@@ -87,15 +89,17 @@
                     a new path, the path of the Ghost, and wage an unconventional war for the freedom of Tsushima.
                  </p>
                  <div>
-                     <span><strong>by</strong>
+                     <span><strong>by:</strong>
                     <a href="#">sony interactive entertainment</a>
                     </span>
                     <span><strong>playable on:</strong>
                        ps4
                     </span>
                  </div>
-                 <button>60$</button>
-                 <button>add to cart</button>
+                 <div>
+                    <button>60$</button>
+                    <button>add to cart</button>
+                 </div>
             </section>
           </article>
 
@@ -236,19 +240,43 @@
             </section>
        </div>
     </main>
-    <!-- <footer class="grid-container">
-        <div>
-            <img src="./img/logo-text-only.png" alt="logo-text-only">
-            <p>
-            He is resolved to do whatever it takes, at any cost,
-            to protect his people and reclaim his home. He must set aside the traditions that have shaped him as a warrior to forge
-            a new path, the path of the Ghost, and wage an unconventional war for the freedom of Tsushima.
-            </p>
+    <footer class="container-full-width">
+        <div class="grid-container">
+            <div class="copy-rights">
+                <img src="./img/logo-text-only-black.png" alt="logo-text-only">
+                <p>
+                    He is resolved to do whatever it takes, at any cost,
+                    to protect his people and reclaim his home. He must set aside the traditions that have shaped him as a warrior
+                    to forge
+                    a new path, the path of the Ghost, and wage an unconventional war for the freedom of Tsushima.
+                </p>
+            </div>
+            <div class="categories">
+                <h2>categories</h2>
+                <div class="grid-container">
+                    <ul>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li><li><a href="#">Lorem Ipsum</a></li><li><a href="#">Lorem Ipsum</a></li><li><a href="#">Lorem Ipsum</a></li><li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                <ul>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                </ul><ul>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                </ul>
+                </div>
+            </div>
         </div>
-        <div>
-
-        </div>
-    </footer> -->
+    </footer>
 </body>
-
+ 
 </html>

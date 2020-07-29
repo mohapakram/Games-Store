@@ -1,31 +1,49 @@
 header {
-  width: 85vw; //TODO: will change
-  justify-content: space-between;
+  .flex-justify-between;
+
+  // Large
+  @media screen and (max-width: 992px) {
+    .flex-justify-center;
+  }
+
   padding: 15px 0;
+
   nav {
-    text-transform: uppercase;
+    .uppercase;
+
+    .flex-justify-center;
 
     img#logo {
       height: 60px;
-    }
 
-    > * {
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 1.5em;
+      //Medium
+      @media screen and (max-width: 768px) {
+        height: 50px;
+      }
+
+      // Small
+      @media screen and (max-width: 576px) {
+        height: 40px;
+      }
     }
 
     ul {
+      .flex-container;
+      .flex-justify-around;
       li {
-        display: inline;
-        margin: 0 2em;
-
         &:hover {
           a,
           i {
             color: @pink;
           }
         }
+      }
+    }
+
+    button {
+      // Small
+      @media screen and (max-width: 768px) {
+        display: none;
       }
     }
   }
@@ -45,8 +63,11 @@ header {
       color: white;
       img {
         border-radius: 50%;
-        height: 60px;
+        height: 50px;
       }
+    }
+    @media screen and (max-width: 992px) {
+      display: none;
     }
   }
 }

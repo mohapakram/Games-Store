@@ -1,57 +1,77 @@
-.nextItem {
-  width: 50px;
-  height: 50px;
-  color: #d35266;
-  font-size: 4em;
-  padding: 16px 0 0 16px;
-  position: absolute;
-  top: 40%;
-
-  border-radius: 50%;
-  border: 1px solid @lightGray;
-  cursor: pointer;
-}
-
 #hot-ads {
   position: relative;
-  width: 50%;
+
   h2 {
-    text-align: left;
-    margin-left: 0;
+    .container;
+    margin: 20px auto;
     font-size: 1.8em;
     font-weight: normal;
   }
 
   article {
+    grid-template-columns: 1.2fr 1fr;
+    .container;
+
+    // Large
+    @media screen and (max-width: 992px) {
+      .container-full-width;
+    }
+
+    //Medium
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+    }
+
     img {
       width: 100%;
     }
 
     section {
+      padding-left: 10px;
+      .flex-container;
+      flex-direction: column;
+      .flex-justify-between;
+
+      //Medium
+      @media screen and (max-width: 768px) {
+        padding: 0;
+        .flex-justify-between;
+      }
       h2 {
+        padding: 0;
         font-size: 2em;
-        color: @pink;
-        margin: 0 15px;
+        color: #d35266;
+        text-align: left;
+        margin: 0;
+        width: 100%;
+      }
+
+      strong {
+        font-weight: bold;
       }
 
       div {
-        margin: 15px;
-
-        strong {
-          font-weight: bold;
+        &:first-of-type {
+          > * {
+            display: block;
+          }
         }
 
-        > * {
-          display: block;
+        &:last-of-type {
+          //Medium
+          @media screen and (max-width: 768px) {
+            align-self: center;
+          }
         }
       }
     }
 
     button {
+      padding-top: 5px;
       .primary-btn;
       .capitalize;
       &:first-of-type {
-        margin: 0 0 0 15px;
         border-radius: 15px 0 0 15px;
       }
       &:last-of-type {
@@ -60,16 +80,22 @@
       }
     }
 
+   
+
+    a {
+      color: @pink;
+    }
+
     &:after {
       .nextItem;
       content: ">";
-      right: -17%;
+      right: 10%;
     }
 
     &:before {
       .nextItem;
       content: "<";
-      left: -17%;
+      left: 10%;
     }
 
     &:hover {

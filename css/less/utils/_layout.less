@@ -1,10 +1,12 @@
 .container {
-  max-width: 1400px;
+  max-width: 1140px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .container-full-width {
-  width: 100%;
+  width: auto;
+  padding: 0 15px;
 }
 
 .border {
@@ -21,6 +23,7 @@
 
 #products {
   margin-top: 15px;
+  padding: 25px;
   .border;
 }
 
@@ -43,10 +46,16 @@
 .products-grid {
   .margin-x-auto;
   position: relative;
-  width: 80%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 15px;
+  width: 80%;
+  //Medium
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    .container-full-width;
+  }
+
+  gap: 15px;
 
   > span {
     position: absolute;
@@ -54,6 +63,11 @@
     font-size: 3em;
     color: black;
     cursor: pointer;
+
+    //Medium
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   > span:first-of-type {
