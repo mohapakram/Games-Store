@@ -30,6 +30,8 @@ Just clone the project and open `index.html` file in chrome.
 ## Design 
 
 Check it on [behance](https://www.behance.net/gallery/24796463/ZATTIX).
+
+
 Design idea by [Mohammed Awad on Behance](https://www.behance.net/M_Awad).
 
 ## 🤝 Contributing
