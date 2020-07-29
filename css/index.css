@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html,
 body,
 div,
@@ -87,7 +83,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -115,10 +110,10 @@ blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
   content: "";
   content: none;
 }
@@ -134,25 +129,25 @@ table {
 }
 @font-face {
   font-family: "Gotham";
-  src: url("/fonts/Hero Light.otf") format("opentype");
-  font-weight: light;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeue Light.ttf") format("truetype");
-  font-weight: light;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeue Medium.ttf") format("truetype");
+  src: url("/fonts/Hero-Light.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Helvetica Neue";
-  src: url("/fonts/Helvetica Neu Bold.ttf") format("truetype");
+  src: url("/fonts/HelveticaNeue-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/Helvetica-Neu-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -231,12 +226,6 @@ table {
     display: none;
   }
 }
-.products-grid > span:first-of-type {
-  left: -5%;
-}
-.products-grid > span:last-of-type {
-  right: -5%;
-}
 .products-grid article {
   border: 1px solid #88888869;
   background-color: white;
@@ -269,13 +258,19 @@ table {
 .products-grid article div span {
   color: #d35266;
 }
+.products-grid > span:first-of-type {
+  left: -5%;
+}
+.products-grid > span:last-of-type {
+  right: -5%;
+}
 body {
   background-color: #fafbfb;
   font-size: 14px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: normal;
   text-transform: capitalize;
-  color: #888888;
+  color: #888;
   line-height: 1.4em;
 }
 @media screen and (max-width: 992px) {
@@ -347,7 +342,7 @@ a {
 .flex-justify-start {
   justify-content: start;
 }
-.messages-number:after {
+.messages-number::after {
   content: "1";
   position: absolute;
   top: 0;
@@ -391,6 +386,11 @@ header {
     justify-content: center;
   }
 }
+header a,
+header i {
+  color: #888888;
+  margin: 0 1em;
+}
 header nav {
   text-transform: uppercase;
   justify-content: center;
@@ -420,11 +420,6 @@ header nav ul li:hover i {
   header nav button {
     display: none;
   }
-}
-header a,
-header i {
-  color: #888888;
-  margin: 0 1em;
 }
 header #profile {
   position: relative;
@@ -467,6 +462,18 @@ header #profile-image-container img {
     row-gap: 5px;
   }
 }
+.search-input-container .search-container > a {
+  padding: 1em 1.5em;
+  border: none;
+  outline: none;
+  color: #383838;
+  background-color: white;
+  box-shadow: none;
+  text-transform: capitalize;
+  padding: 15px 20px;
+  background-color: #383838;
+  color: white;
+}
 .search-input-container .search-container > button {
   padding: 1em 1.5em;
   border: none;
@@ -478,8 +485,6 @@ header #profile-image-container img {
 }
 .search-input-container .search-container > button:last-child {
   background-color: #383838;
-}
-.search-input-container .search-container > button:last-child a {
   color: white;
 }
 .search {
@@ -492,7 +497,7 @@ header #profile-image-container img {
   height: 400px;
   text-align: center;
 }
-.search#search:after {
+.search#search::after {
   width: 100vw;
   height: 400px;
   content: "";
@@ -506,7 +511,7 @@ header #profile-image-container img {
   z-index: -1;
   transition: all 1s ease-out;
 }
-.search#search:hover:after {
+.search#search:hover::after {
   opacity: 0.2;
   transform: rotate(10deg);
 }
@@ -528,6 +533,18 @@ header #profile-image-container img {
     row-gap: 5px;
   }
 }
+.search#search .search-container > a {
+  padding: 1em 1.5em;
+  border: none;
+  outline: none;
+  color: #383838;
+  background-color: white;
+  box-shadow: none;
+  text-transform: capitalize;
+  padding: 15px 20px;
+  background-color: #383838;
+  color: white;
+}
 .search#search .search-container > button {
   padding: 1em 1.5em;
   border: none;
@@ -539,8 +556,6 @@ header #profile-image-container img {
 }
 .search#search .search-container > button:last-child {
   background-color: #383838;
-}
-.search#search .search-container > button:last-child a {
   color: white;
 }
 .search#search > div {
@@ -569,6 +584,18 @@ header #profile-image-container img {
     row-gap: 5px;
   }
 }
+.search#results .search-container > a {
+  padding: 1em 1.5em;
+  border: none;
+  outline: none;
+  color: #383838;
+  background-color: white;
+  box-shadow: none;
+  text-transform: capitalize;
+  padding: 15px 20px;
+  background-color: #383838;
+  color: white;
+}
 .search#results .search-container > button {
   padding: 1em 1.5em;
   border: none;
@@ -580,8 +607,6 @@ header #profile-image-container img {
 }
 .search#results .search-container > button:last-child {
   background-color: #383838;
-}
-.search#results .search-container > button:last-child a {
   color: white;
 }
 .search#results .search-container {
@@ -698,7 +723,7 @@ header #profile-image-container img {
 #hot-ads article a {
   color: #d35266;
 }
-#hot-ads article:after {
+#hot-ads article::after {
   width: 50px;
   height: 50px;
   color: #d35266;
@@ -713,11 +738,11 @@ header #profile-image-container img {
   right: 10%;
 }
 @media screen and (max-width: 1615px) {
-  #hot-ads article:after {
+  #hot-ads article::after {
     display: none;
   }
 }
-#hot-ads article:before {
+#hot-ads article::before {
   width: 50px;
   height: 50px;
   color: #d35266;
@@ -732,12 +757,12 @@ header #profile-image-container img {
   left: 10%;
 }
 @media screen and (max-width: 1615px) {
-  #hot-ads article:before {
+  #hot-ads article::before {
     display: none;
   }
 }
-#hot-ads article:hover:before,
-#hot-ads article:hover:after {
+#hot-ads article:hover::before,
+#hot-ads article:hover::after {
   background-color: #d35266;
   color: white;
 }
