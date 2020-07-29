@@ -214,6 +214,11 @@ table {
     padding: 0 15px;
   }
 }
+@media screen and (max-width: 576px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .products-grid > span {
   position: absolute;
   top: 40%;
