@@ -13,7 +13,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/mohapakram/games-store/store-front-end/index.html)
+[Live Demo Link](https://rawcdn.githack.com/mohapakram/games-store/8f4624e0fc9b5e586f806de01c4bf3e23460210b/index.html)
 
 ## Getting Started
 
