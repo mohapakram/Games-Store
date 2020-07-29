@@ -4,7 +4,10 @@
   background-color: @darkerBackground;
   .grid-container;
   grid-template-columns: 1fr 4fr;
-
+  // Large
+  @media screen and (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
   main {
     article {
       &hover {
@@ -16,6 +19,11 @@
       .grid-container;
       grid-template-columns: 1fr 2fr;
       gap: 25px;
+
+      //Medium
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
 
       img {
         width: 100%;
@@ -53,5 +61,15 @@ aside {
       }
     }
     padding: 15px;
+  }
+
+  // Large
+  @media screen and (max-width: 992px) {
+    text-align: center;
+  }
+
+  //Medium
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }

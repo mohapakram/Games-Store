@@ -740,6 +740,11 @@ footer > div {
   grid-template-columns: 2fr 2fr;
   padding: 15px 10%;
 }
+@media screen and (max-width: 768px) {
+  footer > div {
+    grid-template-columns: 1fr;
+  }
+}
 footer .copy-rights {
   padding: 25px;
   text-align: center;
@@ -772,6 +777,11 @@ footer .categories > div a {
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
+@media screen and (max-width: 992px) {
+  #results-page {
+    grid-template-columns: 1fr;
+  }
+}
 #results-page main article {
   padding: 15px;
   margin: 15px;
@@ -782,6 +792,11 @@ footer .categories > div a {
 }
 #results-page main articlehover {
   background-color: white;
+}
+@media screen and (max-width: 768px) {
+  #results-page main article {
+    grid-template-columns: 1fr;
+  }
 }
 #results-page main article img {
   width: 100%;
@@ -822,4 +837,14 @@ aside ul li:first-of-type {
   font-weight: bold;
   border-bottom: 1px solid #d35266;
   padding-bottom: 5px;
+}
+@media screen and (max-width: 992px) {
+  aside {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  aside {
+    display: none;
+  }
 }
