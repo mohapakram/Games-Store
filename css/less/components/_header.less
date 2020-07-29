@@ -8,6 +8,12 @@ header {
 
   padding: 15px 0;
 
+  a,
+  i {
+    color: @gray;
+    margin: 0 1em;
+  }
+
   nav {
     .uppercase;
 
@@ -30,6 +36,7 @@ header {
     ul {
       .flex-container;
       .flex-justify-around;
+
       li {
         &:hover {
           a,
@@ -48,24 +55,22 @@ header {
     }
   }
 
-  a,
-  i {
-    color: @gray;
-    margin: 0 1em;
-  }
-
   #profile {
     position: relative;
+
     span {
       padding: 1em;
     }
+
     &-image-container {
       color: white;
+
       img {
         border-radius: 50%;
         height: 50px;
       }
     }
+
     @media screen and (max-width: 992px) {
       display: none;
     }

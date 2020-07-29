@@ -34,6 +34,7 @@
 .products-show {
   padding: 5px 25px;
   .margin-x-auto;
+
   h2 {
     border-bottom: 1px solid @lightGray;
     font-weight: normal;
@@ -45,6 +46,7 @@
 
 .products-grid {
   .margin-x-auto;
+
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -74,16 +76,11 @@
     }
   }
 
-  > span:first-of-type {
-    left: -5%;
-  }
-  > span:last-of-type {
-    right: -5%;
-  }
-
   article {
     .border;
+
     background-color: white;
+
     img {
       width: 100%;
       .margin-x-auto;
@@ -104,6 +101,7 @@
 
       button {
         .flat-btn;
+
         padding: 5px 10px;
         .border;
       }
@@ -112,5 +110,13 @@
         color: @pink;
       }
     }
+  }
+
+  > span:first-of-type {
+    left: -5%;
+  }
+
+  > span:last-of-type {
+    right: -5%;
   }
 }

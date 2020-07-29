@@ -1,22 +1,28 @@
 #results-page {
   .border;
+
   padding: 25px 0;
   background-color: @darkerBackground;
+
   .grid-container;
+
   grid-template-columns: 1fr 4fr;
   // Large
   @media screen and (max-width: 992px) {
     grid-template-columns: 1fr;
   }
+
   main {
     article {
       &hover {
         background-color: white;
       }
+
       padding: 15px;
       margin: 15px;
       .border;
       .grid-container;
+
       grid-template-columns: 1fr 2fr;
       gap: 25px;
 
@@ -31,8 +37,10 @@
 
       section {
         .flex-container;
+
         justify-content: space-between;
         flex-direction: column;
+
         h2 {
           margin-left: 0;
         }
@@ -42,6 +50,7 @@
         padding-top: 5px;
         .primary-btn;
         .capitalize;
+
         float: right;
         margin: 5px;
       }
@@ -54,12 +63,14 @@ aside {
     li {
       cursor: pointer;
       padding: 10px;
+
       &:first-of-type {
         font-weight: bold;
         border-bottom: 1px solid @pink;
         padding-bottom: 5px;
       }
     }
+
     padding: 15px;
   }
 

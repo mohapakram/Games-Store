@@ -4,7 +4,7 @@ body {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: normal;
   text-transform: capitalize;
-  color: #888888;
+  color: #888;
   line-height: 1.4em;
 
   // Large
@@ -17,10 +17,6 @@ body {
   @media screen and (max-width: 768px) {
     font-size: 10px;
     line-height: 2em;
-  }
-
-  //Small
-  @media screen and (max-width: 576px) {
   }
 }
 
@@ -60,6 +56,7 @@ a {
   border: none;
   outline: none;
   transition: all 0.5s ease-out;
+
   &:hover {
     background-color: white;
     color: @pink;
@@ -94,7 +91,7 @@ a {
   justify-content: start;
 }
 
-.messages-number:after {
+.messages-number::after {
   content: "1";
   position: absolute;
   top: 0;
