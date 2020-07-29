@@ -27,6 +27,11 @@ Just clone the project and open `index.html` file in chrome.
 - Twitter: [@mohapakram](https://twitter.com/mohapakram)
 - Linkedin: [mohapakram](https://www.linkedin.com/in/mohab-akram-667093131)
 
+## Design 
+
+check it on [behance](https://www.behance.net/gallery/24796463/ZATTIX)
+Design idea by [Mohammed Awad on Behance](https://www.behance.net/M_Awad)
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
