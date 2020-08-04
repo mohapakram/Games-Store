@@ -1,0 +1,47 @@
+footer {
+  .border;
+
+  > div {
+    grid-template-columns: 2fr 1fr 1fr;
+
+    //Medium
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    padding: 15px 10%;
+  }
+
+  .copy-rights {
+    padding: 25px;
+    text-align: center;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  img {
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .categories {
+    h2 {
+      color: @pink;
+      border-bottom: 1px solid @pink;
+      padding-bottom: 15px;
+      margin-left: 0;
+      width: 80%;
+    }
+
+    > div {
+      grid-template-columns: repeat(3, 1fr);
+
+      a {
+        color: @gray;
+        margin: 2px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+body {
+  background-color: @lightBackground;
+  font-size: 14px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #888;
+  line-height: 1.4em;
+
+  // Large
+  @media screen and (max-width: 992px) {
+    font-size: 12px;
+    line-height: 1.8em;
+  }
+
+  //Medium
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+    line-height: 2em;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gotham", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 15px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.primary-btn {
+  background-color: @pink;
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  outline: none;
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    background-color: white;
+    color: @pink;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-around {
+  justify-content: space-around;
+}
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-justify-start {
+  justify-content: start;
+}
+
+.messages-number::after {
+  content: "1";
+  position: absolute;
+  top: 0;
+  padding: 5px;
+  font-size: 0.8em;
+  color: white;
+  border-radius: 25%;
+  background-color: #d35266;
+}
+
+.flat-btn {
+  padding: 1em 1.5em;
+  border: none;
+  outline: none;
+  color: @dark;
+  background-color: white;
+  box-shadow: none;
+}
+
+.nextItem {
+  width: 50px;
+  height: 50px;
+  color: #d35266;
+  font-size: 4em;
+  padding: 16px 0 0 16px;
+  position: absolute;
+  top: 40%;
+  border-radius: 50%;
+  border: 1px solid @lightGray;
+  cursor: pointer;
+  // Large
+  @media screen and (max-width: 1615px) {
+    display: none;
+  }
+}
+
+#copyrights {
+  padding: 15px;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 0;
+
+  span {
+    color: white;
+    border-radius: 5px;
+    background-color: @pink;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+}

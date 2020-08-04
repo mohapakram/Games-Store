@@ -1,0 +1,122 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-full-width {
+  width: auto;
+  padding: 0 15px;
+}
+
+.border {
+  border: 1px solid @lightGray;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.margin-x-auto {
+  margin: 0 auto;
+}
+
+#products {
+  margin-top: 15px;
+  padding: 25px;
+  .border;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.products-show {
+  padding: 5px 25px;
+  .margin-x-auto;
+
+  h2 {
+    border-bottom: 1px solid @lightGray;
+    font-weight: normal;
+    margin: 25px auto;
+    width: 90%;
+    padding-bottom: 15px;
+  }
+}
+
+.products-grid {
+  .margin-x-auto;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  //Medium
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    .container-full-width;
+  }
+  //Small
+  @media screen and (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+
+  gap: 15px;
+
+  > span {
+    position: absolute;
+    top: 40%;
+    font-size: 3em;
+    color: black;
+    cursor: pointer;
+
+    //Medium
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  article {
+    .border;
+
+    background-color: white;
+
+    img {
+      width: 100%;
+      .margin-x-auto;
+    }
+
+    > h3,
+    > span {
+      margin: 5px 15px;
+    }
+
+    div {
+      padding: 15px;
+      justify-content: space-between;
+
+      * {
+        margin: 5px 0;
+      }
+
+      button {
+        .flat-btn;
+
+        padding: 5px 10px;
+        .border;
+      }
+
+      span {
+        color: @pink;
+      }
+    }
+  }
+
+  > span:first-of-type {
+    left: -5%;
+  }
+
+  > span:last-of-type {
+    right: -5%;
+  }
+}
