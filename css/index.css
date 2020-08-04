@@ -377,6 +377,23 @@ a {
     display: none;
   }
 }
+#copyrights {
+  padding: 15px;
+}
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 0;
+}
+.pagination span {
+  color: white;
+  border-radius: 5px;
+  background-color: #d35266;
+  padding: 5px 10px;
+  margin: 5px;
+}
 header {
   justify-content: space-between;
   padding: 15px 0;
@@ -766,8 +783,11 @@ header #profile-image-container img {
     display: none;
   }
 }
+footer {
+  border: 1px solid #88888869;
+}
 footer > div {
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 2fr 1fr 1fr;
   padding: 15px 10%;
 }
 @media screen and (max-width: 768px) {
