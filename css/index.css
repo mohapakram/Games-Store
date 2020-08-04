@@ -624,7 +624,7 @@ header #profile-image-container img {
 .search-text img {
   height: 100px;
 }
-.search-text p {
+.search-text h1 {
   font-size: 1.8em;
 }
 .search input {
