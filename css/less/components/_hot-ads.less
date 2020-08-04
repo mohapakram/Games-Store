@@ -9,7 +9,7 @@
     font-weight: normal;
   }
 
-  article {
+  > div {
     grid-template-columns: 1.2fr 1fr;
     .container;
 
@@ -52,6 +52,15 @@
 
       strong {
         font-weight: bold;
+      }
+
+      &:hover {
+        //   TODO:fix the hover
+        &::before,
+        &::after {
+          background-color: @pink;
+          color: white;
+        }
       }
 
       div {
@@ -101,15 +110,6 @@
 
       content: "<";
       left: 10%;
-    }
-
-    &:hover {
-      //   TODO:fix the hover
-      &::before,
-      &::after {
-        background-color: @pink;
-        color: white;
-      }
     }
   }
 }

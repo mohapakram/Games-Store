@@ -646,40 +646,40 @@ header #profile-image-container img {
   font-size: 1.8em;
   font-weight: normal;
 }
-#hot-ads article {
+#hot-ads > div {
   grid-template-columns: 1.2fr 1fr;
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
 }
 @media screen and (max-width: 992px) {
-  #hot-ads article {
+  #hot-ads > div {
     width: auto;
     padding: 0 15px;
   }
 }
 @media screen and (max-width: 768px) {
-  #hot-ads article {
+  #hot-ads > div {
     grid-template-columns: 1fr;
     row-gap: 10px;
   }
 }
-#hot-ads article img {
+#hot-ads > div img {
   width: 100%;
 }
-#hot-ads article section {
+#hot-ads > div section {
   padding-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-  #hot-ads article section {
+  #hot-ads > div section {
     padding: 0;
     justify-content: space-between;
   }
 }
-#hot-ads article section h2 {
+#hot-ads > div section h2 {
   padding: 0;
   font-size: 2em;
   color: #d35266;
@@ -687,18 +687,23 @@ header #profile-image-container img {
   margin: 0;
   width: 100%;
 }
-#hot-ads article section strong {
+#hot-ads > div section strong {
   font-weight: bold;
 }
-#hot-ads article section div:first-of-type > * {
+#hot-ads > div section:hover::before,
+#hot-ads > div section:hover::after {
+  background-color: #d35266;
+  color: white;
+}
+#hot-ads > div section div:first-of-type > * {
   display: block;
 }
 @media screen and (max-width: 768px) {
-  #hot-ads article section div:last-of-type {
+  #hot-ads > div section div:last-of-type {
     align-self: center;
   }
 }
-#hot-ads article button {
+#hot-ads > div button {
   padding-top: 5px;
   background-color: #d35266;
   padding: 1em 1.5em;
@@ -709,21 +714,21 @@ header #profile-image-container img {
   transition: all 0.5s ease-out;
   text-transform: capitalize;
 }
-#hot-ads article button:hover {
+#hot-ads > div button:hover {
   background-color: white;
   color: #d35266;
 }
-#hot-ads article button:first-of-type {
+#hot-ads > div button:first-of-type {
   border-radius: 15px 0 0 15px;
 }
-#hot-ads article button:last-of-type {
+#hot-ads > div button:last-of-type {
   margin: 0 0 0 -3px;
   border-radius: 0 15px 15px 0;
 }
-#hot-ads article a {
+#hot-ads > div a {
   color: #d35266;
 }
-#hot-ads article::after {
+#hot-ads > div::after {
   width: 50px;
   height: 50px;
   color: #d35266;
@@ -738,11 +743,11 @@ header #profile-image-container img {
   right: 10%;
 }
 @media screen and (max-width: 1615px) {
-  #hot-ads article::after {
+  #hot-ads > div::after {
     display: none;
   }
 }
-#hot-ads article::before {
+#hot-ads > div::before {
   width: 50px;
   height: 50px;
   color: #d35266;
@@ -757,14 +762,9 @@ header #profile-image-container img {
   left: 10%;
 }
 @media screen and (max-width: 1615px) {
-  #hot-ads article::before {
+  #hot-ads > div::before {
     display: none;
   }
-}
-#hot-ads article:hover::before,
-#hot-ads article:hover::after {
-  background-color: #d35266;
-  color: white;
 }
 footer > div {
   grid-template-columns: 2fr 2fr;
@@ -812,7 +812,7 @@ footer .categories > div a {
     grid-template-columns: 1fr;
   }
 }
-#results-page main article {
+#results-page main > div {
   padding: 15px;
   margin: 15px;
   border: 1px solid #88888869;
@@ -820,26 +820,26 @@ footer .categories > div a {
   grid-template-columns: 1fr 2fr;
   gap: 25px;
 }
-#results-page main articlehover {
+#results-page main > divhover {
   background-color: white;
 }
 @media screen and (max-width: 768px) {
-  #results-page main article {
+  #results-page main > div {
     grid-template-columns: 1fr;
   }
 }
-#results-page main article img {
+#results-page main > div img {
   width: 100%;
 }
-#results-page main article section {
+#results-page main > div section {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-#results-page main article section h2 {
+#results-page main > div section h2 {
   margin-left: 0;
 }
-#results-page main article button {
+#results-page main > div button {
   padding-top: 5px;
   background-color: #d35266;
   padding: 1em 1.5em;
@@ -852,7 +852,7 @@ footer .categories > div a {
   float: right;
   margin: 5px;
 }
-#results-page main article button:hover {
+#results-page main > div button:hover {
   background-color: white;
   color: #d35266;
 }
